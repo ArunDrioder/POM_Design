@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NetBanking Demo Project Test Suite">
+
+    <listeners>
+        <listener class-name="com.netbankingproject.Utils.Reporters.ExtentReport"/>
+    </listeners>
+
+    <test name="Login Test" >
+
+        <parameter name="browser" value="chrome"/>
+<!--        <parameter name="browser" value="firefox"/>-->
+
+        <packages>
+            <package name="com.netbankingproject.*"/>
+        </packages>
+
+        <classes>
+            <class name="com.netbankingproject.testCases.LoginTest"/>
+        </classes>
+
+
+
+        
+    </test>
+
+</suite>
